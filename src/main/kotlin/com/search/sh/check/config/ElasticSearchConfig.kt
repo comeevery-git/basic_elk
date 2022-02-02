@@ -16,6 +16,7 @@ class ElasticSearchConfig(
     override fun elasticsearchClient(): RestHighLevelClient {
         val clientConfiguration: ClientConfiguration = ClientConfiguration.builder()
                 .connectedTo(elasticsearchProperties.getHostAndPort())
+//                .withBasicAuth("elastic", "pwd..")
                 .build();
 
         return RestClients.create(clientConfiguration).rest();

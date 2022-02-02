@@ -1,0 +1,44 @@
+02:56:41.127 [Test worker] INFO  c.s.sh.check.CheckApplicationTests - Starting CheckApplicationTests using Java 17.0.1 on gangsuhuiui-MacBookPro.local with PID 32061 (started by suhee in /Users/suhee/git/check)
+02:56:41.129 [Test worker] INFO  c.s.sh.check.CheckApplicationTests - No active profile set, falling back to default profiles: default
+02:56:42.015 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+02:56:42.038 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Elasticsearch repository interfaces.
+02:56:42.723 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+02:56:42.799 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 1 Elasticsearch repository interfaces.
+02:56:42.814 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+02:56:42.821 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Reactive Elasticsearch repository interfaces.
+02:56:46.070 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.16.3-4e6e4eab2297e949ec994e688dad46290d018022 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security."]
+02:56:46.156 [Test worker] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/blog?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 2 warnings: [299 Elasticsearch-7.16.3-4e6e4eab2297e949ec994e688dad46290d018022 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security."],[299 Elasticsearch-7.16.3-4e6e4eab2297e949ec994e688dad46290d018022 "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+02:56:46.453 [Test worker] INFO  c.s.sh.check.CheckApplicationTests - Started CheckApplicationTests in 5.857 seconds (JVM running for 7.75)
+02:56:47.405 [Test worker] WARN  org.elasticsearch.client.RestClient - request [PUT http://localhost:9200/blog/_doc/1?timeout=1m] returned 1 warnings: [299 Elasticsearch-7.16.3-4e6e4eab2297e949ec994e688dad46290d018022 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security."]
+02:56:47.513 [Test worker] WARN  org.elasticsearch.client.RestClient - request [POST http://localhost:9200/blog/_refresh?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true] returned 2 warnings: [299 Elasticsearch-7.16.3-4e6e4eab2297e949ec994e688dad46290d018022 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security."],[299 Elasticsearch-7.16.3-4e6e4eab2297e949ec994e688dad46290d018022 "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+02:56:47.519 [Test worker] INFO  c.s.sh.check.CheckApplicationTests - [save] blogId: '1'
+02:58:41.478 [main] INFO  c.search.sh.check.CheckApplicationKt - Starting CheckApplicationKt using Java 17.0.1 on gangsuhuiui-MacBookPro.local with PID 32116 (/Users/suhee/git/check/build/classes/kotlin/main started by suhee in /Users/suhee/git/check)
+02:58:41.484 [main] INFO  c.search.sh.check.CheckApplicationKt - No active profile set, falling back to default profiles: default
+02:58:42.158 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+02:58:42.172 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Elasticsearch repository interfaces.
+02:58:42.646 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+02:58:42.686 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 1 Elasticsearch repository interfaces.
+02:58:42.701 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+02:58:42.704 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+02:58:43.167 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+02:58:43.175 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+02:58:43.176 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+02:58:43.176 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+02:58:43.264 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+02:58:43.265 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1678 ms
+02:58:44.752 [I/O dispatcher 1] WARN  org.elasticsearch.client.RestClient - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.16.3-4e6e4eab2297e949ec994e688dad46290d018022 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security."]
+02:58:44.786 [main] WARN  org.elasticsearch.client.RestClient - request [HEAD http://localhost:9200/blog?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 2 warnings: [299 Elasticsearch-7.16.3-4e6e4eab2297e949ec994e688dad46290d018022 "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.16/security-minimal-setup.html to enable security."],[299 Elasticsearch-7.16.3-4e6e4eab2297e949ec994e688dad46290d018022 "[ignore_throttled] parameter is deprecated because frozen indices have been deprecated. Consider cold or frozen tiers in place of frozen indices."]
+02:58:44.854 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+02:58:44.869 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+02:58:44.886 [main] INFO  c.search.sh.check.CheckApplicationKt - Started CheckApplicationKt in 4.163 seconds (JVM running for 5.76)
+02:58:44.891 [main] INFO  com.search.sh.check.CheckApplication - test_log '0'
+02:58:44.893 [main] INFO  com.search.sh.check.CheckApplication - test_log '1'
+02:58:44.894 [main] INFO  com.search.sh.check.CheckApplication - test_log '2'
+02:58:44.894 [main] INFO  com.search.sh.check.CheckApplication - test_log '3'
+02:58:44.894 [main] INFO  com.search.sh.check.CheckApplication - test_log '4'
+02:58:44.894 [main] INFO  com.search.sh.check.CheckApplication - test_log '5'
+02:58:44.894 [main] INFO  com.search.sh.check.CheckApplication - test_log '6'
+02:58:44.894 [main] INFO  com.search.sh.check.CheckApplication - test_log '7'
+02:58:44.894 [main] INFO  com.search.sh.check.CheckApplication - test_log '8'
+02:58:44.894 [main] INFO  com.search.sh.check.CheckApplication - test_log '9'
+02:58:44.894 [main] INFO  com.search.sh.check.CheckApplication - test_log '10'

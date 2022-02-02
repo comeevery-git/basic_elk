@@ -6,11 +6,16 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertNotNull
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
+import kotlin.random.Random
 
 @SpringBootTest
 class CheckApplicationTests {
+
+	private val logger: Logger = LoggerFactory.getLogger(CheckApplicationTests::class.java)
 
 	@Autowired
 	private lateinit var elasticSearchRepository: ElasticSearchRepository
@@ -23,10 +28,13 @@ class CheckApplicationTests {
 	@DisplayName("elastic search 저장하기")
 	fun startEs() {
 		var blog: Blog = Blog()
-		blog.id = "2"
-		blog.title = "title :D"
-		blog.content = "content :D"
+		val testId = (1..10).random().toString()
+		blog.id = testId
+		blog.title = "$testId 제목 :D"
+		blog.content = "$testId 내용 :D"
 		elasticSearchRepository.save(blog)
+
+		logger.info("[save] blogId: '${blog.id}'")
 	}
 
 	@Test
